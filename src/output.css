@@ -1884,10 +1884,6 @@ html {
   min-height: 8rem;
 }
 
-.min-h-\[60vh\] {
-  min-height: 60vh;
-}
-
 .min-h-screen {
   min-height: 100vh;
 }
@@ -2299,12 +2295,28 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:h-20 {
     height: 5rem;
   }
 
   .md\:grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:place-self-center {
@@ -2341,10 +2353,6 @@ html {
 
   .lg\:h-24 {
     height: 6rem;
-  }
-
-  .lg\:min-h-screen {
-    min-height: 100vh;
   }
 
   .lg\:w-1\/2 {
